@@ -1,0 +1,70 @@
+/* ==========================================================================
+   Variables
+   ========================================================================== */
+
+/*** Colors ***/
+$gray:                          #666;
+$gray-xxlight:                  lighten($gray, 55%);
+$gray-xlight:                   lighten($gray, 45%);
+$gray-light:                    lighten($gray, 15%);
+$gray-dark:                     darken($gray, 10%);
+$gray-xdark:                    darken($gray, 25%);
+$gray-xxdark:                   darken($gray, 35%);
+
+$error:                         #d22017;
+$warning:                       #f9b729;
+$note:                          #1e90ff;
+$success:                       #25d252;
+
+$brand-primary:                 #2979ff;
+
+$social-facebook:               #3b5998;
+$social-twitter:                #1da1f2;
+$social-linkedin:               #0077b5;
+$social-pinterest:              #bd081c;
+$social-github:                 #4078c0;
+$social-google-plus:            #dd4b39;
+$social-google:                 #4285f4;
+
+
+/*** Grid ***/
+$grid-columns:                  12;
+$grid-gutter-horizontal:        20px;
+$grid-gutter-small-horizontal:  12px;
+$grid-gutter-large-horizontal:  50px;
+$grid-gutter-vertical:          30px;
+$grid-gutter-small-vertical:    20px;
+$grid-gutter-large-vertical:    70px;
+
+
+/*** Scaffolding ***/
+$edge-padding:                  10px;
+$wrapper-small:                 500px;
+$wrapper-medium:                650px;
+$wrapper-large:                 1000px;
+$wrapper-huge:                  1300px;
+$section-padding-desktop:       80px;
+$section-padding-mobile:        $section-padding-desktop * .5;
+$spacer:                        1.5em;
+
+
+/*** Responsive Breakpoints ***/
+$breakpoints: (
+    small: 400px,
+    medium: 800px,
+    large: 1100px
+);
+
+
+/*** Typography ***/
+$font-family-body:              sans-serif;
+$font-family-heading:           serif;
+$font-size:                     16px;
+$text-color:                    $gray-dark;
+$letter-spacing:                .15em;
+$line-height:                   1.75;
+$line-height-computed:          $font-size * $line-height;
+
+
+/*** Misc ***/
+$transition:                    .3s;

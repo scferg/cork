@@ -1,0 +1,42 @@
+/* ==========================================================================
+   Mixin Functions
+   ========================================================================== */
+
+@mixin cell-size($size) {
+    max-width: percentage($size / $grid-columns);
+    flex: 0 0 percentage($size / $grid-columns);
+}
+
+@mixin wrapper-width($wrapper-width) {
+    max-width: $wrapper-width + ($edge-padding * 2);
+
+    &.is-half {
+        max-width: ($wrapper-width / 2) + $edge-padding;
+    }
+}
+
+@mixin button-bg($bg-color) {
+    background-color: $bg-color;
+
+    &:hover {
+        background-color: darken($bg-color, 10%);
+    }
+
+    &.is-outline {
+        background-color: transparent;
+        border-color: $bg-color;
+        color: $bg-color;
+
+        &:hover {
+            background-color: $bg-color;
+        }
+    }
+}
+
+@mixin button-text($text-color) {
+    color: $text-color;
+
+    &.is-outline:hover {
+        color: $text-color !important;
+    }
+}

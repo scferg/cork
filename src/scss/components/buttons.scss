@@ -1,0 +1,78 @@
+/* ==========================================================================
+   Buttons
+   ========================================================================== */
+
+.button {
+    display: inline-block;
+    padding: .9em 1.5em;
+    border: 2px solid transparent;
+    border-radius: 0;
+    outline: none;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    transition: background-color $transition, color $transition, transform .1s;
+    cursor: pointer;
+
+    .button + & {
+        margin-left: 10px;
+    }
+
+    .button.is-block + & {
+        margin-top: 10px;
+        margin-left: 0;
+    }
+
+    &:active {
+        transform: scale(.98);
+    }
+
+    &.is-block {
+        width: 100%;
+        display: block;
+        text-align: center;
+    }
+
+    &.is-small {
+        padding: .25em 1.5em;
+        border-width: 1px;
+        font-size: .8em;
+    }
+
+    &.is-large {
+        font-size: 1em;
+    }
+
+    &.is-wide {
+        padding-right: 4em;
+        padding-left: 4em;
+    }
+
+    &.is-bg-white {         @include button-bg(#fff); }
+    &.is-bg-xxlightgray {   @include button-bg($gray-xxlight); }
+    &.is-bg-xlightgray {    @include button-bg($gray-xlight); }
+    &.is-bg-lightgray {     @include button-bg($gray-light); }
+    &.is-bg-gray {          @include button-bg($gray); }
+    &.is-bg-darkgray {      @include button-bg($gray-dark); }
+    &.is-bg-xdarkgray {     @include button-bg($gray-xdark); }
+    &.is-bg-xxdarkgray {    @include button-bg($gray-xxdark); }
+    &.is-bg-primary {       @include button-bg($brand-primary); }
+    &.is-bg-error {         @include button-bg($error); }
+    &.is-bg-warning {       @include button-bg($warning); }
+    &.is-bg-success {       @include button-bg($success); }
+    &.is-bg-note {          @include button-bg($note); }
+
+    &.is-text-white {       @include button-text(#fff); }
+    &.is-text-xxlightgray { @include button-text($gray-xxlight); }
+    &.is-text-xlightgray {  @include button-text($gray-xlight); }
+    &.is-text-lightgray {   @include button-text($gray-light); }
+    &.is-text-gray {        @include button-text($gray); }
+    &.is-text-darkgray {    @include button-text($gray-dark); }
+    &.is-text-xdarkgray {   @include button-text($gray-xdark); }
+    &.is-text-xxdarkgray {  @include button-text($gray-xxdark); }
+    &.is-text-primary {     @include button-text($brand-primary); }
+    &.is-text-error {       @include button-text($error); }
+    &.is-text-warning {     @include button-text($warning); }
+    &.is-text-success {     @include button-text($success); }
+    &.is-text-note {        @include button-text($note); }
+}

@@ -18,6 +18,7 @@
     "gulp-html-partial": "git://github.com/scferg/gulp-html-partial.git",
     "gulp-jshint": "^2.0.0",
     "gulp-rename": "^1.2.2",
+    "gulp-replace": "^0.6.1",
     "gulp-sass": "^2.1.1",
     "gulp-sourcemaps": "^1.6.0",
     "gulp-uglify": "^1.5.1",

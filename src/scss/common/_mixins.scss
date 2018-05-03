@@ -36,6 +36,10 @@
 @mixin button-text($text-color) {
     color: $text-color;
 
+    @if (lightness($text-color) > 50) {
+        @extend %aa;
+    }
+
     &.is-outline:hover {
         color: $text-color !important;
     }

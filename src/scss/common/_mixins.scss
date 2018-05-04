@@ -40,6 +40,10 @@
         @extend %aa;
     }
 
+    &::before {
+        border-color: $text-color;
+    }
+
     &.is-outline:hover {
         color: $text-color !important;
     }

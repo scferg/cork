@@ -25,6 +25,7 @@
     "gulp-util": "^3.0.8",
     "include-media": "^1.4.9",
     "ionicons": "^2.0.1",
-    "jshint": "^2.8.0"
+    "jshint": "^2.8.0",
+    "bootstrap": "^4.1.3"
   }
 }

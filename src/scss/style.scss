@@ -1,23 +1,6 @@
+@import '../../node_modules/bootstrap/scss/bootstrap.scss';
 @import 'common/variables';
 
-@import '../../node_modules/include-media/dist/include-media';
-
-@import 'common/mixins';
-@import 'common/normalize';
-@import 'common/base';
-@import 'common/helpers';
-@import 'common/print';
-
-@import 'components/grid';
-@import 'components/scaffolding';
-@import 'components/typography';
-@import 'components/forms';
-@import 'components/buttons';
-@import 'components/alerts';
-@import 'components/keyframes';
-
 /*
- * Insert layout partials here
+ * Custom styles and imports go here
  */
-
- 

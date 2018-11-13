@@ -4,39 +4,3 @@
 /*
  * Custom styles and imports go here
  */
-.logo {
-  width: 150px;
-  height: 80px;
-  background: url('https://thinkpatented.com/app/themes/tp2014/assets/img/logo-white.svg') center / contain no-repeat;
-}
-
-textarea.form-control {
-  min-height: 6rem;
-}
-
-.label {
-  font-weight: bold;
-}
-
-.footer {
-  padding: 2rem 0;
-  background: gray('700');
-  color: gray('300');
-  font-size: .8rem;
-
-  .footer-icon {
-    margin: 3px 10px 0 0;
-  }
-
-  a {
-    color: inherit;
-  }
-
-  .logo {
-    opacity: .7;
-  }
-
-  .copyright {
-    opacity: .7;
-  }
-}

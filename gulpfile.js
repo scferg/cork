@@ -9,6 +9,7 @@ var gulp = require('gulp'),
     rename = require('gulp-rename'),
     cssnano = require('gulp-cssnano'),
     htmlPartial = require('gulp-html-partial'),
+    inlineCss = require('gulp-inline-css'),
     sourcemaps = require('gulp-sourcemaps');
 
 var config = {
@@ -20,6 +21,18 @@ gulp.task('html', function() {
         .pipe(htmlPartial({
             basePath: 'src/partials/',
             prettify: false
+        }))
+        .pipe(gulp.dest('app'));
+
+    gulp.src('src/emails/*.html')
+        .pipe(htmlPartial({
+            basePath: 'src/partials/',
+            prettify: false
+        }))
+        .pipe(inlineCss({
+            preserveMediaQueries: true,
+            applyLinkTags: false,
+            url: ' '
         }))
         .pipe(gulp.dest('app'));
 });
@@ -67,5 +80,5 @@ gulp.task('bs-reload', function () {
 gulp.task('default', ['html', 'css', 'js', 'browser-sync'], function () {
     gulp.watch("src/scss/**/*.scss", {cwd: './'}, ['css']);
     gulp.watch("src/js/*.js", ['js']);
-    gulp.watch(["src/pages/**/*.html", "src/partials/**/*.html"], ['html', 'bs-reload']);
+    gulp.watch(["src/pages/**/*.html", "src/emails/**/*.html", "src/partials/**/*.html"], ['html', 'bs-reload']);
 });
